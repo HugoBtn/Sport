@@ -10,13 +10,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Outfit', sans-serif; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Outfit', sans-serif; -webkit-tap-highlight-color: transparent; background-color: #F9FAFB; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
-        video { mix-blend-mode: multiply; }
-        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
+        video { mix-blend-mode: multiply; border-radius: 1.5rem; }
+        .card-shadow { box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.04); }
     </style>
 </head>
-<body class="bg-[#F3F4F6]">
+<body>
     <div id="root"></div>
 
     <script type="text/babel">
@@ -39,10 +39,10 @@
                     accent: "bg-pink-600",
                     light: "bg-pink-50",
                     exercises: [
-                        { name: "Tirage Vertical", machine: "Poulie Haute", tip: "Bras longs : Arrête-toi au menton pour protéger tes épaules.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Lat-Pulldown.mp4" },
-                        { name: "Tirage Horizontal", machine: "Seated Row", tip: "Garde le buste fixe. Ne laisse pas le poids t'étirer trop loin.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Seated-Cable-Row.mp4" },
-                        { name: "Développé Machine", machine: "Shoulder Press", tip: "Coudes légèrement vers l'avant. Ne descends pas sous les oreilles.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Lever-Shoulder-Press.mp4" },
-                        { name: "Élévations Latérales", machine: "Haltères", tip: "Légère flexion. Imagine que tu pousses les murs vers l'extérieur.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Lateral-Raise.mp4" }
+                        { name: "Tirage Vertical", machine: "Poulie Haute", tip: "Bras longs : Arrête-toi au menton. Ne force pas l'amplitude vers le bas.", video: "https://media.musclewiki.com/media/uploads/mens-back-lat-pulldown-front.mp4" },
+                        { name: "Tirage Horizontal", machine: "Seated Row", tip: "Garde le buste fixe. Ne laisse pas tes bras t'entraîner trop loin.", video: "https://media.musclewiki.com/media/uploads/mens-back-seated-cable-row-side.mp4" },
+                        { name: "Développé Machine", machine: "Shoulder Press", tip: "Stop aux oreilles. Coudes un peu vers l'avant.", video: "https://media.musclewiki.com/media/uploads/mens-shoulders-machine-shoulder-press-front.mp4" },
+                        { name: "Élévations Latérales", machine: "Haltères", tip: "Légère flexion. Pousse vers l'extérieur plutôt que vers le haut.", video: "https://media.musclewiki.com/media/uploads/mens-shoulders-dumbbell-lateral-raise-front.mp4" }
                     ]
                 },
                 {
@@ -51,10 +51,10 @@
                     accent: "bg-emerald-600",
                     light: "bg-emerald-50",
                     exercises: [
-                        { name: "Vertical Press", machine: "Chest Press Matrix", tip: "Règle le siège bas. Alignement poignées / milieu des pecs.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/06/Lever-Chest-Press.mp4" },
-                        { name: "Butterfly / Pec Deck", machine: "Machine", tip: "Tes bras longs font levier : contrôle bien la phase arrière.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pec-Deck-Fly.mp4" },
-                        { name: "Pull Over", machine: "Haltère", tip: "Amplitude contrôlée derrière la tête. Ne cambre pas.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Pullover.mp4" },
-                        { name: "Curl Haltères", machine: "Haltères", tip: "Stabilité totale. Ne donne pas d'élan avec le dos.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Curl.mp4" }
+                        { name: "Vertical Press", machine: "Chest Press", tip: "Siège bas pour aligner poignées et milieu des pectoraux.", video: "https://media.musclewiki.com/media/uploads/mens-chest-machine-press-side.mp4" },
+                        { name: "Butterfly", machine: "Pec Deck", tip: "Tes longs bras font un levier puissant : contrôle l'étirement.", video: "https://media.musclewiki.com/media/uploads/mens-chest-pec-deck-front.mp4" },
+                        { name: "Pull Over", machine: "Haltère", tip: "Amplitude contrôlée derrière la tête. Ne cambre pas le dos.", video: "https://media.musclewiki.com/media/uploads/mens-chest-dumbbell-pullover-side.mp4" },
+                        { name: "Curl Biceps", machine: "Haltères", tip: "Stabilité totale. Ne donne aucun élan avec les épaules.", video: "https://media.musclewiki.com/media/uploads/mens-biceps-dumbbell-curl-front.mp4" }
                     ]
                 },
                 {
@@ -63,102 +63,92 @@
                     accent: "bg-blue-600",
                     light: "bg-blue-50",
                     exercises: [
-                        { name: "Presse 45°", machine: "Leg Press", tip: "PIEDS HAUTS sur le plateau pour tes longues jambes.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Leg-Press.mp4" },
-                        { name: "Leg Extension", machine: "Matrix", tip: "Dossier reculé au maximum pour caler tes fémurs.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Leg-Extension.mp4" },
-                        { name: "Leg Curl", machine: "Machine", tip: "Mouvement lent. Ne décolle pas les fesses du siège.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Seated-Leg-Curl.mp4" },
-                        { name: "Extension Poulie", machine: "Poulie Haute", tip: "Coudes soudés aux côtes. Verrouille ton buste.", video: "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pushdown.mp4" }
+                        { name: "Presse 45°", machine: "Leg Press", tip: "PIEDS HAUTS sur le plateau pour tes longs fémurs.", video: "https://media.musclewiki.com/media/uploads/mens-legs-leg-press-side.mp4" },
+                        { name: "Leg Extension", machine: "Matrix", tip: "Dossier reculé au MAX pour bien caler tes jambes.", video: "https://media.musclewiki.com/media/uploads/mens-legs-leg-extension-side.mp4" },
+                        { name: "Leg Curl", machine: "Machine", tip: "Mouvement lent. Ne décolle pas les fesses du siège.", video: "https://media.musclewiki.com/media/uploads/mens-legs-seated-leg-curl-side.mp4" },
+                        { name: "Extension Triceps", machine: "Poulie Haute", tip: "Coudes soudés aux côtes. Verrouille ton buste.", video: "https://media.musclewiki.com/media/uploads/mens-triceps-tricep-pushdown-side.mp4" }
                     ]
                 }
             ];
 
             return (
                 <div className="max-w-md mx-auto min-h-screen pb-12">
-                    {/* Header Premium */}
-                    <header className="bg-[#111827] text-white p-8 rounded-b-[3rem] shadow-2xl mb-8">
+                    <header className="bg-gray-900 text-white p-8 rounded-b-[2.5rem] shadow-xl mb-6">
                         <div className="flex justify-between items-center mb-4">
-                            <h1 className="text-2xl font-black italic tracking-tighter uppercase leading-none">Basic-Fit<br/><span className="text-yellow-400">Master Plan</span></h1>
-                            <div className="h-12 w-12 bg-yellow-400 rounded-2xl flex items-center justify-center text-black font-black text-xl shadow-lg shadow-yellow-400/20">BF</div>
+                            <h1 className="text-2xl font-black italic tracking-tighter uppercase leading-none">Basic-Fit<br/><span className="text-yellow-400 text-3xl">3D Trainer</span></h1>
                         </div>
-                        <div className="inline-block bg-white/10 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-yellow-400 border border-white/10">
-                            Morphologie : Grands Segments 📏
+                        <div className="inline-block bg-yellow-400 text-black px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-widest">
+                            Grand Gabarit 📏
                         </div>
                     </header>
 
-                    <div className="px-6 space-y-8">
-                        {/* Sélecteur de Cycle */}
-                        <div className="flex gap-2 overflow-x-auto no-scrollbar py-2">
+                    <div className="px-5 space-y-6">
+                        {/* Cycle Selector */}
+                        <div className="flex gap-2 overflow-x-auto no-scrollbar py-1">
                             {Object.keys(cycles).map(m => (
                                 <button key={m} onClick={() => setMonth(m)} 
-                                    className={`px-6 py-3 rounded-2xl text-[10px] font-black uppercase transition-all whitespace-nowrap ${month === m ? 'bg-[#111827] text-white shadow-xl scale-105' : 'bg-white text-gray-400 border border-gray-100'}`}>
+                                    className={`px-6 py-3 rounded-2xl text-[10px] font-black uppercase transition-all whitespace-nowrap ${month === m ? 'bg-gray-900 text-white scale-105' : 'bg-white text-gray-400 border border-gray-100 shadow-sm'}`}>
                                     {m}
                                 </button>
                             ))}
                         </div>
 
-                        {/* Recap Objectif */}
-                        <div className="bg-white p-5 rounded-[2rem] border border-gray-100 card-shadow flex items-center gap-4">
-                            <div className="h-12 w-12 bg-yellow-50 rounded-2xl flex items-center justify-center text-2xl">⚡</div>
+                        {/* Goal Card */}
+                        <div className="bg-white p-5 rounded-3xl border border-gray-50 card-shadow flex items-center gap-4">
+                            <div className="h-10 w-10 bg-yellow-100 rounded-2xl flex items-center justify-center text-xl">🔥</div>
                             <div>
-                                <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Objectif du mois</p>
-                                <p className="text-base font-bold text-gray-900 leading-tight">{cycles[month]}</p>
+                                <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Objectif</p>
+                                <p className="text-sm font-bold text-gray-900">{cycles[month]}</p>
                             </div>
                         </div>
 
-                        {/* Tabs Séances */}
+                        {/* Séance Tabs */}
                         <div className="grid grid-cols-3 gap-3">
                             {program.map((s, idx) => (
                                 <button key={idx} onClick={() => setActiveTab(idx)}
                                     className={`py-4 rounded-2xl font-black text-[10px] uppercase transition-all border-b-4 ${activeTab === idx ? 'bg-white shadow-xl ' + s.color + ' ' + s.color.replace('text', 'border') : 'bg-gray-100 text-gray-400 border-transparent'}`}>
-                                    S{idx + 1}
+                                    Séance {idx + 1}
                                 </button>
                             ))}
                         </div>
 
-                        {/* Liste des Exercices */}
+                        {/* Exercises List */}
                         <div className="space-y-6">
                             <h2 className={`text-2xl font-black italic uppercase pl-2 ${program[activeTab].color}`}>
                                 {program[activeTab].title}
                             </h2>
                             {program[activeTab].exercises.map((ex, i) => (
-                                <div key={i} className="bg-white rounded-[2.5rem] p-6 border border-gray-50 card-shadow">
+                                <div key={i} className="bg-white rounded-[2rem] p-5 border border-gray-50 card-shadow">
                                     <div className="flex justify-between items-start mb-4">
                                         <div>
-                                            <h3 className="font-black text-xl text-gray-900 leading-tight mb-1">{ex.name}</h3>
-                                            <span className="text-[9px] bg-gray-100 px-2 py-1 rounded-md font-bold text-gray-500 uppercase tracking-widest">{ex.machine}</span>
+                                            <h3 className="font-black text-lg text-gray-900 leading-tight mb-1">{ex.name}</h3>
+                                            <span className="text-[9px] bg-gray-100 px-2 py-1 rounded-md font-bold text-gray-400 uppercase tracking-widest">{ex.machine}</span>
                                         </div>
-                                        <div className={`h-8 w-8 rounded-xl flex items-center justify-center font-black text-white text-xs ${program[activeTab].accent}`}>{i + 1}</div>
                                     </div>
 
-                                    {/* Visual 3D */}
-                                    <div className="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white border border-gray-100 mb-4 relative">
-                                        <video key={ex.video} src={ex.video} autoPlay loop muted playsInline className="w-full h-full object-contain" />
+                                    {/* 3D Visual Player */}
+                                    <div className="aspect-square rounded-2xl overflow-hidden bg-white mb-4 flex items-center justify-center border border-gray-50">
+                                        <video 
+                                            key={ex.video} 
+                                            autoPlay 
+                                            loop 
+                                            muted 
+                                            playsInline 
+                                            webkit-playsinline="true"
+                                            className="w-full h-full object-contain"
+                                        >
+                                            <source src={ex.video} type="video/mp4" />
+                                            Votre navigateur ne supporte pas la vidéo.
+                                        </video>
                                     </div>
 
-                                    {/* Tip Spécial Grand */}
+                                    {/* Tall Person Tip */}
                                     <div className={`flex gap-3 p-4 rounded-2xl ${program[activeTab].light}`}>
-                                        <span className="text-xl">📏</span>
-                                        <p className="text-xs font-bold leading-relaxed text-gray-800 italic">{ex.tip}</p>
+                                        <span className="text-lg leading-none">📏</span>
+                                        <p className="text-[11px] font-bold leading-relaxed text-gray-800 italic">{ex.tip}</p>
                                     </div>
                                 </div>
                             ))}
-                        </div>
-
-                        {/* Fin de séance */}
-                        <div className="bg-[#111827] text-white p-8 rounded-[3rem] shadow-2xl mt-8">
-                            <h3 className="text-yellow-400 font-black italic uppercase text-lg mb-6 tracking-tighter">Fin de séance</h3>
-                            <div className="space-y-4">
-                                <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/5">
-                                    <span className="text-xs font-bold uppercase tracking-widest text-gray-400">Abdos Crunch</span>
-                                    <span className="font-black text-yellow-400">4 x 20</span>
-                                </div>
-                                <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-white/5">
-                                    <span className="text-xs font-bold uppercase tracking-widest text-gray-400">Gainage</span>
-                                    <span className="font-black text-yellow-400">4 x Max</span>
-                                </div>
-                                <div className="pt-4 flex items-center gap-3 text-blue-400 font-bold text-xs uppercase tracking-widest">
-                                    <span>💧 Hydratation 1.5L Min</span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
